@@ -276,6 +276,12 @@ body {
   font-size: 1.1rem;
   list-style-type: none;
 }
+.main header ul li {
+  position: relative;
+  float: left;
+  text-shadow: 0 0 10px white;
+  padding: 5px;
+}
 
 .main header nav ul li a {
   display: block;
@@ -289,12 +295,6 @@ body {
 .main header nav ul li a:hover {
   transform: translateY(-3px);
   text-shadow: 0 0 10px white, 0 0 20px white;
-}
-.main header ul li {
-  position: relative;
-  float: left;
-  text-shadow: 0 0 10px white;
-  padding: 5px;
 }
 
 .main header nav .playbtn {
