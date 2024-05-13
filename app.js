@@ -4,13 +4,15 @@ document.body.addEventListener("keypress", (ev) => {
   if (ev.key == "Enter") {
     TweenMax.to(".landing", 3, { opacity: 0 });
     TweenMax.from(".main", 5, { opacity: 0, delay: 2 });
-    TweenMax.from(".nav", 1.5, { opacity: 0, height: 0, delay: 3 });
+    TweenMax.from(".header", 1.5, { opacity: 0, height: 0, delay: 3 });
     TweenMax.from(".quote", 2.5, { opacity: 0, y: 100, delay: 3.5 });
     TweenMax.from(".sidebar", 1, { opacity: 0, x: 100, delay: 4 });
     document.querySelector(".landing").style.zIndex = "-10";
   }
 });
 // Scrolltrigger animations
+
+// Trailer box entrance
 gsap.from(".trailerbox", {
   scrollTrigger: {
     trigger: ".trailerbox",
@@ -22,6 +24,8 @@ gsap.from(".trailerbox", {
   opacity: 0,
   duration: 1,
 });
+
+// About section entrance
 gsap.from(".heading", {
   scrollTrigger: {
     trigger: ".heading",
@@ -103,6 +107,7 @@ gsap.from(".img3", {
   duration: 3,
 });
 
+// Guardians section entrance
 gsap.from(".slidercontainer", {
   scrollTrigger: {
     trigger: ".slidercontainer",
@@ -126,6 +131,7 @@ gsap.from(".slidertitle", {
   duration: 1,
 });
 
+// Subclasses area entrances
 gsap.from(".subclasses", {
   scrollTrigger: {
     trigger: ".img4",
