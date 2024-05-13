@@ -63,6 +63,15 @@ tl.from(
   "<"
 );
 tl.from(
+  ".intro img",
+  {
+    height: 0,
+    opacity: 0,
+    duration: 1,
+  },
+  "<"
+);
+tl.from(
   ".intro p",
   {
     x: -100,
@@ -107,22 +116,13 @@ tl.from(
   },
   ">"
 );
-tl.from(
-  ".intro img",
-  {
-    height: 0,
-    opacity: 0,
-    duration: 1,
-  },
-  "<"
-);
 
 // Scroll Trigger animations
 let tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".abilities",
     start: "top center",
-    markers: true,
+    markers: false,
     scrub: false,
     ease: "power2.inOut",
   },
@@ -132,7 +132,7 @@ let tl3 = gsap.timeline({
     trigger: ".solar",
     start: "top bottom",
     end: "bottom top",
-    markers: true,
+    markers: false,
     scrub: true,
     ease: "power2.inOut",
   },
@@ -142,7 +142,7 @@ let tl4 = gsap.timeline({
     trigger: ".arc",
     start: "top bottom",
     end: "bottom top",
-    markers: true,
+    markers: false,
     scrub: true,
     ease: "power2.inOut",
   },
@@ -152,7 +152,7 @@ let tl5 = gsap.timeline({
     trigger: ".arc",
     start: "top bottom",
     end: "bottom top",
-    markers: true,
+    markers: false,
     scrub: false,
     ease: "power2.inOut",
   },
