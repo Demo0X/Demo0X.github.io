@@ -172,11 +172,11 @@ ul.submenu2 li:nth-child(3) a:hover {
   align-items: center;
   width: 100%;
   height: 100%;
-  font-size: 3rem;
 }
 
 .hidden {
   background: black;
+  font-size: 2.5rem;
   overflow: hidden;
 }
 
@@ -186,17 +186,17 @@ ul.submenu2 li:nth-child(3) a:hover {
 }
 
 .maintxt {
-  animation: select 1.2s ease infinite 1.4s;
+  animation: select 1s ease-in infinite 1.4s;
 }
 
 @keyframes select {
   0% {
     color: white;
-    text-shadow: 0;
+    text-shadow: 0 0 1px #d29e26;
   }
   50% {
     color: #a8873b;
-    text-shadow: 0 0 1px #d29e26;
+    text-shadow: 0 0 3px #d29e26;
   }
   100% {
     color: #d29e26;
@@ -219,7 +219,6 @@ ul.submenu2 li:nth-child(3) a:hover {
 }
 
 .contentbox {
-  background: #0d1527;
   position: absolute;
   top: 200px;
   width: 80%;
