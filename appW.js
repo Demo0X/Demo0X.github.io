@@ -133,21 +133,11 @@ let tl3 = gsap.timeline({
     start: "top bottom",
     end: "bottom top",
     markers: false,
-    scrub: true,
+    scrub: false,
     ease: "power2.inOut",
   },
 });
 let tl4 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".arc",
-    start: "top bottom",
-    end: "bottom top",
-    markers: false,
-    scrub: true,
-    ease: "power2.inOut",
-  },
-});
-let tl5 = gsap.timeline({
   scrollTrigger: {
     trigger: ".arc",
     start: "top bottom",
@@ -252,7 +242,7 @@ tl4.from(
   },
   "<"
 );
-tl5.from(
+tl4.from(
   ".s3",
   {
     opacity: 0,
