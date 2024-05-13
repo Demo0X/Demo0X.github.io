@@ -79,6 +79,17 @@ gsap.from(".img", {
   opacity: 0,
   duration: 3,
 });
+gsap.from(".img2", {
+  scrollTrigger: {
+    trigger: ".img",
+    start: "top center",
+    markers: false,
+    scrub: true,
+  },
+  x: -100,
+  opacity: 0,
+  duration: 3,
+});
 gsap.from(".img3", {
   scrollTrigger: {
     trigger: ".img3",
@@ -91,17 +102,30 @@ gsap.from(".img3", {
   opacity: 0,
   duration: 3,
 });
-gsap.from(".img2", {
+
+gsap.from(".slidercontainer", {
   scrollTrigger: {
-    trigger: ".img",
+    trigger: ".slidercontainer",
     start: "top center",
     markers: false,
-    scrub: true,
+    scrub: false,
   },
-  x: -100,
+  width: 0,
   opacity: 0,
-  duration: 3,
+  duration: 1,
 });
+gsap.from(".slidertitle", {
+  scrollTrigger: {
+    trigger: ".slidercontainer",
+    start: "top center",
+    markers: false,
+    scrub: false,
+  },
+  opacity: 0,
+  x: -100,
+  duration: 1,
+});
+
 gsap.from(".subclasses", {
   scrollTrigger: {
     trigger: ".img4",
