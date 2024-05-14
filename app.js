@@ -10,6 +10,17 @@ document.body.addEventListener("keypress", (ev) => {
     document.querySelector(".landing").style.zIndex = "-10";
   }
 });
+// Explore buttons on guardian section
+function Warlock() {
+  window.location.href = "guardianW.html";
+}
+function Hunter() {
+  window.location.href = "guardianH.html";
+}
+function Titan() {
+  window.location.href = "guardianT.html";
+}
+
 // Scrolltrigger animations
 
 // Trailer box entrance
