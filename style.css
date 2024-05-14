@@ -699,7 +699,7 @@ ul.submenu2 li:nth-child(3) a:hover {
   text-transform: uppercase;
   font-weight: 900;
   text-align: center;
-  left: 800px;
+  left: 830px;
   top: 500px;
   letter-spacing: 2px;
   opacity: 0;
@@ -739,7 +739,7 @@ ul.submenu2 li:nth-child(3) a:hover {
   transition: all 1s;
 }
 .picture1 button {
-  left: 880px;
+  left: 900px;
   top: 510px;
   background: #d29e26;
   box-shadow: 0px 5px 30px #17212e, 0 10px 10px #1c2838;
@@ -760,13 +760,13 @@ ul.submenu2 li:nth-child(3) a:hover {
 
 .picture2 h1 {
   top: 450px;
-  left: 830px;
+  left: 850px;
   color: #5a86a3;
   text-shadow: 0 0 10px black, 0 0 20px black, 0 0 50px black, 0 0 80px black;
   transition: all 1s;
 }
 .picture2 button {
-  left: 880px;
+  left: 900px;
   top: 510px;
   background: #5a86a3;
   box-shadow: 0px 5px 30px #17212e, 0 10px 10px #1c2838;
@@ -786,13 +786,13 @@ ul.submenu2 li:nth-child(3) a:hover {
 
 .picture3 h1 {
   top: 450px;
-  left: 860px;
+  left: 880px;
   color: #ac3033;
   text-shadow: 0 0 10px black, 0 0 20px black, 0 0 50px black, 0 0 80px black;
   transition: all 1s;
 }
 .picture3 button {
-  left: 880px;
+  left: 900px;
   top: 510px;
   background: #ac3033;
   box-shadow: 0px 5px 30px #17212e, 0 10px 10px #1c2838;
