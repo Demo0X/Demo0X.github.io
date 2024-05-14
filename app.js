@@ -4,7 +4,7 @@ document.body.addEventListener("keypress", (ev) => {
   if (ev.key == "Enter") {
     TweenMax.to(".landing", 3, { opacity: 0 });
     TweenMax.from(".main", 5, { opacity: 0, delay: 2 });
-    TweenMax.from(".nav", 1.5, { opacity: 0, height: 0, delay: 3 });
+    TweenMax.from(".header", 1.5, { opacity: 0, height: 0, delay: 3 });
     TweenMax.from(".quote", 2.5, { opacity: 0, y: 100, delay: 3.5 });
     TweenMax.from(".sidebar", 1, { opacity: 0, x: 100, delay: 4 });
     document.querySelector(".landing").style.zIndex = "-10";
