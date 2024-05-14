@@ -9,7 +9,7 @@ tl.to(".text1", {
 
 tl.to(".loader", {
   delay: 1.5,
-  scale: 20,
+  scale: 40,
   duration: 1,
   ease: "power2.inOut",
 });
@@ -18,7 +18,7 @@ tl.to(
   ".loader",
   {
     y: 200,
-    x: 13000,
+    x: 1000,
     opacity: 0,
     duration: 1,
     ease: "power2.inOut",

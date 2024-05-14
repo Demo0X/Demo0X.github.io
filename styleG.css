@@ -10,6 +10,26 @@ body {
   height: 100vh;
   overflow-x: hidden;
 }
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
 
 main {
   position: absolute;
@@ -34,7 +54,6 @@ main {
   align-items: center;
   z-index: 2;
   width: 100%;
-  background: #28282a84;
   padding-bottom: 1rem;
 }
 .main header nav {
@@ -92,15 +111,18 @@ main {
   transition: all 1s;
 }
 [class*="submenu"] li {
-  float: none;
+  /* float: none; */
+  text-align: center;
+  background: rgb(202, 201, 201);
+  margin-bottom: 5px;
+  border-radius: 10px;
   width: 100%;
 }
 
 li:hover [class*="submenu"] {
   opacity: 1;
-  padding: 10px;
+  padding: 8px;
   top: 40px;
-  border-radius: 30px;
   visibility: visible;
 }
 ul.submenu1 li:nth-child(1) a {
@@ -185,11 +207,17 @@ ul.submenu2 li:nth-child(3) a:hover {
   display: inline-block;
 }
 
-.maintxt {
-  animation: select 1s ease-in infinite 1.4s;
+.maintxt1 {
+  animation: select1 1s ease-in forwards 1.4s;
+}
+.maintxt2 {
+  animation: select2 1s ease-in forwards 1.4s;
+}
+.maintxt3 {
+  animation: select3 1s ease-in forwards 1.4s;
 }
 
-@keyframes select {
+@keyframes select1 {
   0% {
     color: white;
     text-shadow: 0 0 1px #d29e26;
@@ -201,6 +229,34 @@ ul.submenu2 li:nth-child(3) a:hover {
   100% {
     color: #d29e26;
     text-shadow: 0 0 10px #d29e26;
+  }
+}
+@keyframes select2 {
+  0% {
+    color: white;
+    text-shadow: 0 0 1px #027ca1;
+  }
+  50% {
+    color: #027ca1;
+    text-shadow: 0 0 3px #027ca1;
+  }
+  100% {
+    color: #027ca1;
+    text-shadow: 0 0 10px #027ca1;
+  }
+}
+@keyframes select3 {
+  0% {
+    color: white;
+    text-shadow: 0 0 1px #ac3033;
+  }
+  50% {
+    color: #ac3033;
+    text-shadow: 0 0 3px #ac3033;
+  }
+  100% {
+    color: #ac3033;
+    text-shadow: 0 0 10px #ac3033;
   }
 }
 
@@ -219,7 +275,7 @@ ul.submenu2 li:nth-child(3) a:hover {
 }
 
 .contentbox {
-  position: absolute;
+  position: relative;
   top: 200px;
   width: 80%;
   height: 100%;
@@ -247,7 +303,7 @@ h2 {
   font-family: "Ubuntu", sans-serif;
   letter-spacing: 1px;
   font-size: 1.2rem;
-  margin: 2rem 0.5rem;
+  margin: 2rem 0rem;
   padding: 5px 20px;
   width: 70%;
   text-align: justify;
@@ -286,6 +342,17 @@ h4 {
   border: 2px solid white;
   outline: 2px solid white;
   outline-offset: 5px;
+}
+/* Hunter page main picture */
+.subintro .hunterpic {
+  top: 50px;
+  height: 80%;
+}
+/* Titan page main picture */
+
+.abilities {
+  position: relative;
+  left: 10px;
 }
 .abilities h3,
 h4 {
@@ -335,6 +402,7 @@ h4 {
   text-shadow: 0 0 10px #ef6419, 0 0 20px #ef6419;
   color: #ef6419;
 }
+
 .solarsuper {
   position: relative;
 }
@@ -350,7 +418,7 @@ h4 {
   width: 19%;
   z-index: 99;
   left: 1000px;
-  top: 20px;
+  top: 25px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 0 10px #ef6419, 0 0 30px #ef6419, 0 0 50px black, 0 0 80px black;
@@ -364,14 +432,14 @@ h4 {
   color: #7abce8;
 }
 .arcsuper {
-  padding: 10px;
   position: relative;
 }
 .arcsuper h4 {
+  margin-top: 3rem;
   color: #7abce8;
 }
 .arcsuper p {
-  width: 55%;
+  width: 60%;
 }
 .arcimg {
   position: absolute;
@@ -395,4 +463,33 @@ h4 {
 }
 .s3 {
   border-bottom: 2px solid #7abce8;
+}
+
+/* Hunter super images*/
+.vH {
+  left: 1100px;
+}
+.aH {
+  width: 20%;
+  left: 850px;
+  top: 0px;
+}
+.sH {
+  width: 30%;
+  left: 900px;
+  top: 0px;
+}
+
+/* Titan super images  */
+
+.vT {
+  width: 20%;
+  left: 1090px;
+  height: 200px;
+}
+.sT {
+  width: 25%;
+}
+.aT {
+  width: 25%;
 }

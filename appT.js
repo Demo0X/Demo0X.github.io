@@ -18,7 +18,7 @@ tl.to(
   ".loader",
   {
     y: 200,
-    x: 13000,
+    x: -11000,
     opacity: 0,
     duration: 1,
     ease: "power2.inOut",
