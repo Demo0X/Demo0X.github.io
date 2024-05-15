@@ -79,7 +79,7 @@ gsap.from(".para1", {
   },
   x: 100,
   opacity: 0,
-  duration: 3,
+  duration: 4,
 });
 gsap.from(".para2", {
   scrollTrigger: {
