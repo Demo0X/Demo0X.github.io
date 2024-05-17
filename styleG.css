@@ -58,6 +58,16 @@ main {
   background-color: #0d15272d;
   backdrop-filter: blur(5px);
 }
+.bungie {
+  position: absolute;
+  width: 100%;
+}
+.bungie img {
+  margin: 1rem 1rem;
+  color: white;
+  object-fit: cover;
+  width: 11%;
+}
 .main header nav {
   margin: 0px 40px;
 }

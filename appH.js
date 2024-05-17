@@ -55,6 +55,15 @@ tl.from(
   ">"
 );
 tl.from(
+  ".bungie",
+  {
+    opacity: 0,
+    y: -100,
+    duration: 1,
+  },
+  "<"
+);
+tl.from(
   ".intro h1",
   {
     width: 0,
