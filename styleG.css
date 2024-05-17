@@ -281,7 +281,7 @@ ul.submenu2 li:nth-child(3) a:hover {
 }
 
 .contentbox {
-  position: relative;
+  position: absolute;
   top: 200px;
   width: 80%;
   height: 100%;
@@ -354,26 +354,23 @@ h4 {
   top: 50px;
   height: 80%;
 }
-/* Titan page main picture */
 
-.abilities {
-  position: relative;
-  left: 10px;
+.subclasses {
+  width: 100%;
 }
-.abilities h3,
+.subclasses h3,
 h4 {
   margin-bottom: 0.5rem;
 }
-.abilities p {
+.subclasses p {
   display: inline-block;
   width: 70%;
   margin-top: 0;
 }
-.abilities .icon {
+.subclasses .icon {
   width: 1.8%;
 }
-.abilities .supers {
-  /* color: orange; */
+.subclasses .supers {
   width: 100%;
   text-shadow: 0 0 50px orange, 0 0 10px white;
 }
@@ -384,7 +381,7 @@ h4 {
 .voidsuper h4 {
   color: #a371c2;
 }
-.abilities .void {
+.subclasses .void {
   text-shadow: 0 0 10px #a371c2, 0 0 20px #a371c2;
   color: #a371c2;
 }
@@ -403,7 +400,7 @@ h4 {
   outline-offset: 5px;
 }
 
-.abilities .solar {
+.subclasses .solar {
   margin-top: 10rem;
   text-shadow: 0 0 10px #ef6419, 0 0 20px #ef6419;
   color: #ef6419;
@@ -432,7 +429,7 @@ h4 {
   outline: 2px solid white;
   outline-offset: 5px;
 }
-.abilities .arc {
+.subclasses .arc {
   margin-top: 10rem;
   text-shadow: 0 0 10px #7abce8, 0 0 20px #7abce8;
   color: #7abce8;

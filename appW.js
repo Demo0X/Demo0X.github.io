@@ -121,7 +121,7 @@ tl.from(
 // Scroll Trigger animations
 let tl2 = gsap.timeline({
   scrollTrigger: {
-    trigger: ".abilities",
+    trigger: ".subclasses",
     start: "top center",
     markers: false,
     scrub: false,
@@ -148,7 +148,7 @@ let tl4 = gsap.timeline({
     ease: "power2.inOut",
   },
 });
-tl2.from(".abilities h2", {
+tl2.from(".subclasses h2", {
   opacity: 0,
   width: 0,
   duration: 2,
