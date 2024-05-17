@@ -242,6 +242,7 @@ body {
   letter-spacing: 40px;
 }
 .quote span {
+  margin-left: 50px;
   text-shadow: 0 0 10px black, 0 0 20px black, 0 0 40px black, 0 0 60px black,
     0 0 100px black, 0 0 5px #ceba81, 0 0 10px #ceba81;
   animation: pulse 2s linear infinite;
@@ -677,30 +678,39 @@ ul.submenu2 li:nth-child(3) a:hover {
   display: none;
 }
 .image {
+  position: relative;
+  display: flex;
+  justify-content: center;
   width: 20%;
+  height: 100%;
   transition: 2s;
 }
 .image img {
-  border-radius: 60%;
-  width: 800px;
-  height: 500px;
-  object-fit: contain;
-  position: relative;
-  filter: blur(5px);
+  border-radius: 10%;
+  border: 3px solid black;
+  outline: 3px solid black;
+  box-shadow: 0 0 10px white;
+  outline-offset: 2px;
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  filter: blur(10px);
   transition: all 1s;
+  scale: 0.9;
   cursor: pointer;
 }
 
 .image h1 {
   position: absolute;
+  left: 260px;
+  top: 340px;
   z-index: 2;
   font-size: 3rem;
   font-family: "Mulish", sans-serif;
   text-transform: uppercase;
   font-weight: 900;
   text-align: center;
-  left: 830px;
-  top: 500px;
   letter-spacing: 2px;
   opacity: 0;
   transition: all 1s;
@@ -709,7 +719,12 @@ ul.submenu2 li:nth-child(3) a:hover {
 }
 
 .image button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
+  top: 400px;
+  left: 345px;
   z-index: 2;
   font-family: "Ubuntu", sans-serif;
   padding: 10px;
@@ -723,24 +738,31 @@ ul.submenu2 li:nth-child(3) a:hover {
   opacity: 0;
   scale: 0;
 }
+.imgcontent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid white;
+}
 .image button:hover {
   transform: translateY(-5px);
   cursor: pointer;
 }
 .image img:hover {
   filter: blur(0px);
-  scale: 1.05;
+  scale: 1;
 }
 /* ---------------------------------------------------------- */
 .picture1 h1 {
-  top: 450px;
   color: #d29e26;
   text-shadow: 0 0 10px black, 0 0 20px black, 0 0 50px black, 0 0 80px black;
   transition: all 1s;
 }
 .picture1 button {
-  left: 900px;
-  top: 510px;
+  /* left: 0;
+  top: 510px; */
   background: #d29e26;
   box-shadow: 0px 5px 30px #17212e, 0 10px 10px #1c2838;
 }
@@ -759,15 +781,14 @@ ul.submenu2 li:nth-child(3) a:hover {
 /* ---------------------------------------------------------- */
 
 .picture2 h1 {
-  top: 450px;
-  left: 850px;
+  left: 290px;
   color: #5a86a3;
   text-shadow: 0 0 10px black, 0 0 20px black, 0 0 50px black, 0 0 80px black;
   transition: all 1s;
 }
 .picture2 button {
-  left: 900px;
-  top: 510px;
+  /* left: 900px;
+  top: 510px; */
   background: #5a86a3;
   box-shadow: 0px 5px 30px #17212e, 0 10px 10px #1c2838;
 }
@@ -785,15 +806,14 @@ ul.submenu2 li:nth-child(3) a:hover {
 /* ---------------------------------------------------------- */
 
 .picture3 h1 {
-  top: 450px;
-  left: 880px;
+  left: 320px;
   color: #ac3033;
   text-shadow: 0 0 10px black, 0 0 20px black, 0 0 50px black, 0 0 80px black;
   transition: all 1s;
 }
 .picture3 button {
-  left: 900px;
-  top: 510px;
+  /* left: 900px;
+  top: 510px; */
   background: #ac3033;
   box-shadow: 0px 5px 30px #17212e, 0 10px 10px #1c2838;
 }
