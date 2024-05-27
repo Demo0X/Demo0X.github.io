@@ -68,16 +68,66 @@ tl2.from(
   "<"
 );
 
-gsap.from(".racetitle", {
+var tl3 = gsap.timeline({
   scrollTrigger: {
-    trigger: ".racetitle",
+    trigger: ".guardiantitle",
     start: "top center",
     markers: false,
     scrub: false,
     ease: "power2.inOut",
   },
-  width: 0,
 });
+
+tl3.from(".guardiantitle", {
+  opacity: 0,
+  y: -100,
+  duration: 2,
+});
+
+tl3.from(
+  ".guardiansbox",
+  {
+    opacity: 0,
+    height: 0,
+    duration: 1,
+  },
+  "<"
+);
+
+var tl4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".verbtitle",
+    start: "top top",
+    markers: false,
+    scrub: false,
+    ease: "power2.inOut",
+  },
+});
+
+tl4.from(".verbtitle h2", {
+  y: -100,
+  duration: 1,
+  opacity: 0,
+});
+tl4.from(
+  ".verbtitle p",
+  {
+    x: -100,
+    duration: 1,
+    opacity: 0,
+  },
+  "<"
+);
+
+tl4.from(
+  ".wrapper",
+  {
+    scale: 0.8,
+    duration: 1,
+    opacity: 0,
+  },
+  ">"
+);
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -103,3 +153,13 @@ document.querySelector(".title h1").onmouseover = (event) => {
     iterations += 1 / 10;
   }, 30);
 };
+
+function Warlock() {
+  window.location.href = "guardianW.html";
+}
+function Hunter() {
+  window.location.href = "guardianH.html";
+}
+function Titan() {
+  window.location.href = "guardianT.html";
+}
