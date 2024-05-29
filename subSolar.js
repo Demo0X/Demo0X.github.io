@@ -51,6 +51,12 @@ var tl2 = gsap.timeline({
   },
 });
 
+tl2.from(".overview", {
+  xPercent: 50,
+  opacity: 0,
+  duration: 1,
+});
+
 tl2.from(
   ".overviewbox",
   {
@@ -110,6 +116,15 @@ tl3.from(
   },
   "<"
 );
+tl3.from(
+  ".guardians p",
+  {
+    x: -150,
+    opacity: 0,
+    duration: 1,
+  },
+  "<"
+);
 
 var tl4 = gsap.timeline({
   scrollTrigger: {
@@ -130,7 +145,7 @@ tl4.from(
   ".verbtitle p",
   {
     x: -100,
-    duration: 3,
+    duration: 2,
     opacity: 0,
   },
   "<"
