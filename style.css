@@ -1033,6 +1033,7 @@ footer {
   background: #14191e;
   height: 25vh;
   color: white;
+  border-top: 5px solid black;
 }
 
 footer img {
