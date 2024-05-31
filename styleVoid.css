@@ -208,7 +208,7 @@ p {
 }
 
 .overview {
-  width: 99vw;
+  width: 100vw;
   height: 50vh;
   display: flex;
   justify-content: space-around;
@@ -245,7 +245,7 @@ p {
 
 .overviewbox p {
   color: rgb(255, 255, 255);
-  margin: 2rem 0 1rem 3rem;
+  margin: 1rem 3rem;
   text-shadow: 0 0 20px black, 0 0 2px white;
 }
 .overviewbox i {
