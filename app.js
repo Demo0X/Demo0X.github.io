@@ -27,13 +27,13 @@ function Titan() {
 gsap.from(".trailerbox", {
   scrollTrigger: {
     trigger: ".trailerbox",
-    start: "top center",
+    start: "bottom bottom",
     markers: false,
     scrub: false,
   },
   y: -100,
   opacity: 0,
-  duration: 1,
+  duration: 0.5,
 });
 
 // About section entrance
