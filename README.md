@@ -8,4 +8,4 @@ if on-startup the website is broken, Press ENTER and RELOAD the website. Further
 
 <!-- Side Note #2 -->
 
-If you are on laptops, or any other device which is smaller than a 24-inch monitor or larger, I suggest that you try zooming out for smaller screen devices and zoom-in for the latter.
+If you are on laptops, or any other device which is smaller than a 24-inch monitor or larger, I suggest that you try zooming out for smaller screen devices and zoom-in for the latter then reload the page respectively.
