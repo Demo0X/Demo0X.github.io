@@ -880,7 +880,7 @@ ul.submenu2 li:nth-child(3) a:hover {
 /* ---------------------------------------------------------- */
 
 .subclasses {
-  height: 80vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1019,12 +1019,12 @@ ul.submenu2 li:nth-child(3) a:hover {
 }
 .abilitybox img:nth-child(1) {
   position: relative;
-  left: 100px;
-  top: 20px;
+  left: -50px;
+  top: 80px;
 }
 .abilitybox img:nth-child(2) {
   position: relative;
-  left: -250px;
+  left: -400px;
   top: -80px;
 }
 
@@ -1035,7 +1035,7 @@ footer {
   flex-direction: column;
   align-items: center;
   background: #14191e;
-  height: 25vh;
+  height: 30vh;
   color: white;
   border-top: 5px solid black;
 }
