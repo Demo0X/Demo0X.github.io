@@ -463,11 +463,15 @@ ul.submenu2 li:nth-child(3) a:hover {
   bottom: 0;
   z-index: -1;
 }
-
-.trailerbox {
+.trailercontainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   position: relative;
   top: -150px;
-  left: 550px;
+}
+
+.trailerbox {
   width: 40%;
   height: 40%;
   overflow: hidden;
